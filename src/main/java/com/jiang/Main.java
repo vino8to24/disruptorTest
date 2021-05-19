@@ -68,6 +68,7 @@ class MyRunnable implements Runnable {
         for(int i=0; i< Common.ITERATION; ++i) {
             final int seq = i;
             producer.onData(seq);
+            System.out.println(seq);
         }
     }
 }
